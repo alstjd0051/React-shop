@@ -28,6 +28,7 @@ export default function Orders() {
       </aside>
     );
   }
+
   return (
     <aside>
       <div className="order">
@@ -41,7 +42,7 @@ export default function Orders() {
             return (
               <div className="item" key={id}>
                 <div className="img">
-                  <video src="{prototype.thumbnail}" />
+                  <video src={prototype.thumbnail} />
                 </div>
                 <div className="content">
                   <p className="title">
@@ -66,14 +67,15 @@ export default function Orders() {
               <div className="price">$ {totalPrice}</div>
             </div>
             <button className="btn btn--link" onClick={removeAll}>
-              <i className="icon icon--delete"></i>
+              <i className="icon icon--delete" />
             </button>
           </div>
-          <button 
-          className="btn btn--secondary" 
-          style={{width: "100%", marginTop: 10 }}
+          <button
+            className="btn btn--secondary"
+            style={{ width: "100%", marginTop: 10 }}
           >
-            Checkout</button>
+            Checkout
+          </button>
         </div>
       </div>
     </aside>
